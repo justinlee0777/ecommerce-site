@@ -1,15 +1,28 @@
 <html class=beep>
-<body> 
-<p class="hello-world">Hello World!</p>
+
+<head>
+    <script>
+        const toggle = function () {
+            const helloWorld = document.querySelector('.hello-world');
+            const classList = helloWorld.classList;
+
+            if (classList.contains('transparent')) {
+                classList.remove('transparent');
+            } else {
+                classList.add('transparent');
+            }
+        };
+    </script>
+    <style>
+        .transparent {
+            opacity: 0.0;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="hello-world">Hello World!</p>
+    <button onclick="toggle()"></button>
 </body>
+
 </html>
-
-<button onclick="document.querySelector('.hello-world').classList.contains('transparent') ? document.querySelector('.hello-world').classList.remove('transparent') : document.querySelector('.hello-world').classList.add('transparent')">
-</button>
-
-<style>
-	.transparent {
-		opacity: 0.0;
-	}
-</style>
-
