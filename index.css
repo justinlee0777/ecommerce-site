@@ -1,0 +1,54 @@
+html {
+    font-family: "Times New Roman";
+}
+
+body {
+    background-color: lightpink;
+}
+
+.name {
+    color: rgb(190, 109, 84);
+    font-size: 64px;
+}
+
+.occupation {
+    color: rgb(224, 147, 123);
+}
+
+.search-bar {
+    background-color: pink;
+    border: transparent;
+    border-radius: 25px;
+    height: 45px;
+}
+
+.search-bar::placeholder {
+    margin-left: 8px;
+}
+
+.photo {
+    height: 513px;
+    width: 423px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    margin: auto;
+}
+
+.link {
+    opacity: .5;
+}
+
+.link:hover {
+    opacity: 1;
+}

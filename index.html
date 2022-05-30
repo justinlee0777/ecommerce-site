@@ -1,28 +1,35 @@
-<html class=beep>
+<!DOCTYPE html>
+<html>
 
 <head>
-    <script>
-        const toggle = function () {
-            const helloWorld = document.querySelector('.hello-world');
-            const classList = helloWorld.classList;
-
-            if (classList.contains('transparent')) {
-                classList.remove('transparent');
-            } else {
-                classList.add('transparent');
-            }
-        };
-    </script>
-    <style>
-        .transparent {
-            opacity: 0.0;
-        }
-    </style>
+    <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
-    <p class="hello-world">Hello World!</p>
-    <button onclick="toggle()"></button>
+    <input class="search-bar" placeholder="Search..." />
+
+    <div class="content">
+        <div class="left-column">
+            <h1 class="name">Alexa Yang</h1>
+            <h2 class="occupation">High School Student</h2>
+
+            <a class="link" href="">Home</a>
+            <a class="link" href="">Biography</a>
+            <a class="link" href="">Resume&#769</a>
+            <a class="link" href="">Creative Works</a>
+            <a class="link" href="">Philosophy</a>
+        </div>
+
+        <img class="photo" src="./assets/headshot_edited_edited.webp" />
+
+        <p class="description">Welcome to my online portfolio. This portfolio contains all of my accomplishments,
+            passions, and growth at
+            Coral
+            Springs Charter School from 2017 to the present. Currently a senior, this website highlights my experiences
+            as a
+            student and shows diligence and dedication to succeed. I thrive on creative challenges and enjoy making
+            connections along the way. Explore my work.</p>
+    </div>
 </body>
 
 </html>
