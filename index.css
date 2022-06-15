@@ -61,7 +61,8 @@ input::placeholder {
 }
 
 .link {
-    color: rgb(224, 147, 123); opacity: .5;
+    color: rgb(224, 147, 123);
+    opacity: .5;
 }
 
 .link:hover {
