@@ -1,61 +1,11 @@
-<script>
-    const msPerFrame = 1000 / 60;
-    /** In milliseconds. */
-    const duration = 300;
-    const frames = duration / msPerFrame;
+<script type="module">
+    import { smoothAnchorScroll } from '../../utils/smooth-anchor-scroll.function.js';
+    import { createPageReference } from '../../components/page-reference/create-page-reference.function.js';
 
-    /**
-     * @param id of the element to anchor scroll to.
-     */
-    const smoothAnchorScroll = function (id) {
-        let i = 1;
-
-        const page = document.body;
-        const anchor = document.getElementById(id);
-
-        const distance = anchor.getBoundingClientRect().y;
-        const scrollTopPerFrame = distance / frames;
-
-        const setIntervalId = setInterval(() => {
-            if (i >= frames) {
-                clearInterval(setIntervalId);
-                // Need to properly update dots state; bug is probably because of pixel imprecision.
-            }
-
-            page.scrollBy({ top: scrollTopPerFrame });
-
-            i = i + 1;
-        }, msPerFrame);
-    };
-
-    //
+    window.smoothAnchorScroll = smoothAnchorScroll;
 
     window.addEventListener('load', () => {
-        const sectionIds = ['section-1', 'section-2', 'section-3'].reverse();
-
-        [document.body, document.documentElement, window].forEach(rootElement => {
-            rootElement.addEventListener('scroll', () => {
-                let index = sectionIds
-                    .map(sectionId => document.getElementById(sectionId))
-                    .findIndex(element => element.getBoundingClientRect().y <= 0);
-
-                if (index < 0) {
-                    return;
-                }
-
-                index = Math.abs(index - (sectionIds.length - 1));
-
-                const dots = document.querySelectorAll('.page-reference-anchor');
-
-                [...dots].forEach((dot, i) => {
-                    if (i === index) {
-                        dot.style.backgroundColor = 'black';
-                    } else {
-                        dot.style.backgroundColor = 'white';
-                    }
-                });
-            }, { passive: true });
-        });
+        createPageReference(['section-1', 'section-2', 'section-3']);
     });
 </script>
 
@@ -94,12 +44,6 @@
 </style>
 
 <h1>Anchor Smooth Scrolling exercise</h1>
-
-<div class="page-reference">
-    <div class="page-reference-anchor" onclick="smoothAnchorScroll('section-1')"></div>
-    <div class="page-reference-anchor" onclick="smoothAnchorScroll('section-2')"></div>
-    <div class="page-reference-anchor" onclick="smoothAnchorScroll('section-3')"></div>
-</div>
 
 <div class="navigation-bar">
     <button onclick="smoothAnchorScroll('section-1')">Section 1</button>
