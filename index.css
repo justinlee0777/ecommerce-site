@@ -76,6 +76,6 @@ input::placeholder {
 }
 
 .link:hover {
-    color: rgba(224, 147, 123);
+    color: rgb(224, 147, 123);
     opacity: 1;
 }

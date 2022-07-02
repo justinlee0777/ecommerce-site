@@ -1,0 +1,193 @@
+html {
+    font-family: "Times New Roman";
+}
+
+body {
+    background-color: rgb(248,239,237);
+    margin: 0px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+.rectangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 200px 50vw 0 50vw;
+    border-color: rgb(234,200,190);
+}
+
+.resume {
+    position: absolute;
+    top: 20px;
+    left: 42vw;
+    color: rgb(190, 109, 84);
+    font-size: 64px;
+    text-align: center;
+}
+
+.overview {
+    color: rgb(190, 109, 84);
+    font-size: 40px;
+    text-align: center;
+}
+
+.container2 {
+    background-color: rgb(234,200,190);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.educationalhistory {
+    color: rgb(190, 109, 84);
+    font-size: 40px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+.description {
+    color: rgb(224, 147, 123);
+    margin-right: 325px;
+    margin-left: 325px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.container3 {
+    position:  relative;
+}
+
+.coralsprings {
+    font-size: 40px;
+    color: rgb(224, 147, 123);
+    text-align: center;
+    padding: 10px;
+}
+
+.info {
+    font-size: 18px;
+    color: rgb(224, 147, 123);
+}
+
+.relevant-ap-aice-and-honors-classes {
+    color: rgb(224, 147, 123);
+    opacity: 1;
+    border: none;
+    border-radius: 25px;
+    height: 40px;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: rgb(224, 147, 123); 
+    color: white;
+    font-family: Georgia;
+}
+
+.relevant-ap-aice-and-honors-classes:hover {
+    color: white;
+    background-color: rgb(248,239,237);
+    opacity: 1;
+}
+
+.curvedrectangle,.curvedrectangle2,.curvedrectangle3 {
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .1);
+}
+
+.container4 {
+    position: relative;
+}
+
+.northbroward {
+    font-size: 40px;
+    font-family: Georgia;
+    color: rgb(224, 147, 123);
+    text-align: center;
+    padding: 10px;
+}
+
+.info2 {
+    font-size: 18px;
+    color: rgb(224, 147, 123);
+}
+
+.relevant-dual-enrollment-classes {
+    color: rgb(224, 147, 123);
+    opacity: 1;
+    border: none;
+    border-radius: 25px;
+    height: 40px;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 3px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: rgb(224, 147, 123); 
+    color: white;
+    font-family: Georgia;
+}
+
+.relevant-dual-enrollment-classes:hover {
+    color: white;
+    background-color: rgb(248,239,237);
+    opacity: 1;
+}
+
+.vassarcollege {
+    font-size: 40px;
+    color: rgb(224, 147, 123)
+}
+
+.info3 {
+    font-size: 18px;
+    color: rgb(224, 147, 123)
+}
+
+.relevant-vassar-classes {
+    color: rgb(224, 147, 123);
+    opacity: 1;
+    border: none;
+    border-radius: 25px;
+    height: 40px;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 3px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: rgb(224, 147, 123); 
+    color: white;
+    font-family: Georgia;
+}
+
+.relevant-vassar-classes:hover {
+    color: white;
+    background-color: rgb(248,239,237);
+    opacity: 1;
+}
+
+margin-right
