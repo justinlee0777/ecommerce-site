@@ -1,9 +1,9 @@
 html {
-    font-family: "Times New Roman";
+    font-family: Georgia;
 }
 
 body {
-    background-color: rgb(248,239,237);
+    background-color: rgb(248, 239, 237);
     margin: 0px;
 }
 
@@ -11,18 +11,20 @@ body {
     position: relative;
     text-align: center;
 }
+
 .rectangle {
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 200px 50vw 0 50vw;
-    border-color: rgb(234,200,190);
+    border-color: rgb(234, 200, 190);
 }
 
 .resume {
     position: absolute;
     top: 20px;
-    left: 42vw;
+    left: 50%;
+    transform: translateX(-50%);
     color: rgb(190, 109, 84);
     font-size: 64px;
     text-align: center;
@@ -35,7 +37,7 @@ body {
 }
 
 .container2 {
-    background-color: rgb(234,200,190);
+    background-color: rgb(234, 200, 190);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,7 +66,7 @@ body {
 }
 
 .container3 {
-    position:  relative;
+    position: relative;
 }
 
 .coralsprings {
@@ -91,19 +93,21 @@ body {
     font-size: 16px;
     transition-duration: 0.4s;
     cursor: pointer;
-    background-color: rgb(224, 147, 123); 
+    background-color: rgb(224, 147, 123);
     color: white;
     font-family: Georgia;
 }
 
 .relevant-ap-aice-and-honors-classes:hover {
     color: white;
-    background-color: rgb(248,239,237);
+    background-color: rgb(248, 239, 237);
     opacity: 1;
 }
 
-.curvedrectangle,.curvedrectangle2,.curvedrectangle3 {
-    display:  flex;
+.curvedrectangle,
+.curvedrectangle2,
+.curvedrectangle3 {
+    display: flex;
     flex-direction: column;
     align-items: center;
     width: 300px;
@@ -144,14 +148,14 @@ body {
     margin: 4px 3px;
     transition-duration: 0.4s;
     cursor: pointer;
-    background-color: rgb(224, 147, 123); 
+    background-color: rgb(224, 147, 123);
     color: white;
     font-family: Georgia;
 }
 
 .relevant-dual-enrollment-classes:hover {
     color: white;
-    background-color: rgb(248,239,237);
+    background-color: rgb(248, 239, 237);
     opacity: 1;
 }
 
@@ -179,15 +183,39 @@ body {
     margin: 4px 3px;
     transition-duration: 0.4s;
     cursor: pointer;
-    background-color: rgb(224, 147, 123); 
+    background-color: rgb(224, 147, 123);
     color: white;
     font-family: Georgia;
 }
 
 .relevant-vassar-classes:hover {
     color: white;
-    background-color: rgb(248,239,237);
+    background-color: rgb(248, 239, 237);
     opacity: 1;
 }
 
-margin-right
+.navigation-bar {
+    background-color: rgb(224, 147, 124);
+    border-radius: 20px;
+    display: inline-flex;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0 16px;
+    transform: translateY(-50%);
+}
+
+.navigation-bar-item {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    flex: none;
+    font-family: Georgia;
+    font-size: 14px;
+    padding: 0 12px;
+    transition-duration: 0.4s;
+}
+
+.navigation-bar-item:hover {
+    color: rgb(190, 109, 84);
+}
