@@ -1,25 +1,30 @@
 {
-  "name": "portfolio-site",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
-  "scripts": {
-    "start": "http-server -c-1 .",
-    "build": "node scripts/build.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/justinlee0777/portfolio-site.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/justinlee0777/portfolio-site/issues"
-  },
-  "homepage": "https://github.com/justinlee0777/portfolio-site#readme",
-  "devDependencies": {
-    "fs-extra": "^10.1.0",
-    "http-server": "^14.1.1"
-  }
+	"name": "portfolio-site",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.html",
+	"scripts": {
+		"start": "http-server -c-1 .",
+		"build": "node scripts/build.js",
+		"lint": "prettier --write .",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/justinlee0777/portfolio-site.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/justinlee0777/portfolio-site/issues"
+	},
+	"homepage": "https://github.com/justinlee0777/portfolio-site#readme",
+	"devDependencies": {
+		"fs-extra": "^10.1.0",
+		"http-server": "^14.1.1",
+		"prettier": "^2.7.1"
+	},
+	"lint-staged": {
+		"**/*": "prettier --write --ignore-unknown"
+	}
 }
