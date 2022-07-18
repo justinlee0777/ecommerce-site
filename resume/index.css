@@ -1,9 +1,9 @@
 html {
-    font-family: Georgia;
+    font-family: "Times New Roman";
 }
 
 body {
-    background-color: rgb(248, 239, 237);
+    background-color: rgb(248,239,237);
     margin: 0px;
 }
 
@@ -11,20 +11,18 @@ body {
     position: relative;
     text-align: center;
 }
-
 .rectangle {
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 200px 50vw 0 50vw;
-    border-color: rgb(234, 200, 190);
+    border-color: rgb(234,200,190);
 }
 
 .resume {
     position: absolute;
     top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 42vw;
     color: rgb(190, 109, 84);
     font-size: 64px;
     text-align: center;
@@ -34,14 +32,16 @@ body {
     color: rgb(190, 109, 84);
     font-size: 40px;
     text-align: center;
+    font-family: Georgia;
 }
 
 .container2 {
-    background-color: rgb(234, 200, 190);
+    background-color: rgb(234,200,190);
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .educationalhistory {
@@ -49,6 +49,7 @@ body {
     font-size: 40px;
     text-align: center;
     padding-top: 15px;
+    font-family: Georgia;
 }
 
 
@@ -56,6 +57,7 @@ body {
     color: rgb(224, 147, 123);
     margin-right: 325px;
     margin-left: 325px;
+    line-height: 30px;
 }
 
 .row {
@@ -63,10 +65,11 @@ body {
     width: 100%;
     justify-content: space-evenly;
     align-items: flex-start;
+    margin-bottom: 50px;
 }
 
 .container3 {
-    position: relative;
+    position:  relative;
 }
 
 .coralsprings {
@@ -74,11 +77,14 @@ body {
     color: rgb(224, 147, 123);
     text-align: center;
     padding: 10px;
+    font-family: Georgia;
 }
 
 .info {
     font-size: 18px;
     color: rgb(224, 147, 123);
+    line-height: 30px;
+    margin-top: -6px;
 }
 
 .relevant-ap-aice-and-honors-classes {
@@ -93,21 +99,20 @@ body {
     font-size: 16px;
     transition-duration: 0.4s;
     cursor: pointer;
-    background-color: rgb(224, 147, 123);
+    background-color: rgb(224, 147, 123); 
     color: white;
     font-family: Georgia;
+    margin-bottom: 10px;
 }
 
 .relevant-ap-aice-and-honors-classes:hover {
     color: white;
-    background-color: rgb(248, 239, 237);
+    background-color: rgb(248,239,237);
     opacity: 1;
 }
 
-.curvedrectangle,
-.curvedrectangle2,
-.curvedrectangle3 {
-    display: flex;
+.curvedrectangle,.curvedrectangle2,.curvedrectangle3 {
+    display:  flex;
     flex-direction: column;
     align-items: center;
     width: 300px;
@@ -132,6 +137,8 @@ body {
 .info2 {
     font-size: 18px;
     color: rgb(224, 147, 123);
+    line-height: 30px;
+    margin-top: -6px;
 }
 
 .relevant-dual-enrollment-classes {
@@ -148,25 +155,30 @@ body {
     margin: 4px 3px;
     transition-duration: 0.4s;
     cursor: pointer;
-    background-color: rgb(224, 147, 123);
+    background-color: rgb(224, 147, 123); 
     color: white;
     font-family: Georgia;
+    margin-bottom: 10px;
 }
 
 .relevant-dual-enrollment-classes:hover {
     color: white;
-    background-color: rgb(248, 239, 237);
+    background-color: rgb(248,239,237);
     opacity: 1;
 }
 
 .vassarcollege {
     font-size: 40px;
-    color: rgb(224, 147, 123)
+    color: rgb(224, 147, 123);
+    text-align:  center;
+    font-family: Georgia;
 }
 
 .info3 {
     font-size: 18px;
-    color: rgb(224, 147, 123)
+    color: rgb(224, 147, 123);
+    line-height: 30px;
+    margin-top: -6px;
 }
 
 .relevant-vassar-classes {
@@ -183,39 +195,183 @@ body {
     margin: 4px 3px;
     transition-duration: 0.4s;
     cursor: pointer;
-    background-color: rgb(224, 147, 123);
+    background-color: rgb(224, 147, 123); 
     color: white;
     font-family: Georgia;
+    margin-bottom: 10px;
 }
 
 .relevant-vassar-classes:hover {
     color: white;
-    background-color: rgb(248, 239, 237);
+    background-color: rgb(248,239,237);
     opacity: 1;
 }
 
-.navigation-bar {
-    background-color: rgb(224, 147, 124);
-    border-radius: 20px;
-    display: inline-flex;
-    height: 40px;
-    margin: 0 auto;
-    padding: 0 16px;
-    transform: translateY(-50%);
+.container6 {
+    position: relative;
 }
 
-.navigation-bar-item {
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    flex: none;
-    font-family: Georgia;
-    font-size: 14px;
-    padding: 0 12px;
-    transition-duration: 0.4s;
-}
-
-.navigation-bar-item:hover {
+.extracurriculars {
+    text-align: center;
     color: rgb(190, 109, 84);
+    font-size: 40px;
+    font-family: Georgia;
 }
+
+.row2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 0px;
+    margin-top: -10px;
+}
+
+.keyclubrectangle, .keyclubrectangle2 {
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+}
+
+.container7 {
+    position: relative;
+}
+
+.keyclubrectangle {
+    width: 250px;
+    background-color: rgb(237,212,204);
+    margin-top: 30px;
+}
+
+.keyclub {
+    font-family: Georgia;
+    color: whitesmoke;
+    margin-top: 90px;
+}
+
+.keyclubdate {
+    font-family: Georgia;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.keyclubrectangle2 {
+    width: 350px;
+    background-color: rgb(234,200,190);
+    margin-top: 30px;
+}
+
+.keyclubinfo {
+    font-family: Georgia;
+    color: whitesmoke;
+    line-height: 30px;
+    margin-top: 15px;
+    margin-right: 20px;
+
+}
+
+.row3 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 0px;
+}
+
+.internationalclubrectangle, .internationalclubrectangle2 {
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+}
+
+.internationalclubrectangle {
+    width: 250px;
+    margin-top: 0px;
+    background-color:rgb(226,196,188);
+}
+.internationalclubrectangle2 {
+    width: 350px;
+    background-color: rgb(219,182,171);
+    margin-top: 0px;
+}
+
+.internationalclub {
+    font-family: Georgia;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 90;
+    margin-top: 75px;
+}
+
+.internationalclubdate {
+    font-family: Georgia;
+    color: whitesmoke;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 0px;
+
+}
+.internationalclubinfo {
+    font-family: Georgia;
+    color: whitesmoke;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.row4 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.sgaclubrectangle, .sgaclubrectangle2 {
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+}
+
+.sgaclubrectangle {
+    width: 250px;
+    margin-top: 0px;
+    background-color:rgb(218,181,170);
+}
+.sgaclubrectangle2 {
+    width: 350px;
+    background-color: rgb(207,162,149);
+    margin-top: 0px;
+}
+
+.sgaclub {
+    font-family: Georgia;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 90;
+    margin-top: 40px;
+}
+
+.sgaclubdate {
+    font-family: Georgia;
+    color: whitesmoke;
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 0px;
+}
+
+.sgaclubinfo {
+    font-family: Georgia;
+    color: whitesmoke;
+    line-height: 30px;
+    margin-top: 60px;
+    margin-right: 20px;
