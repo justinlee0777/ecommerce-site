@@ -7,60 +7,64 @@ import { smoothAnchorScroll } from '../../utils/smooth-anchor-scroll.function.js
  * @returns undefined.
  */
 export function createPageReference(ids) {
-    // Private functions
+	// Private functions
 
-    /**
-     * @param index (number) is optional. Used to explicitly set which dot to be active.
-     */
-    function updatePageReferences(index) {
-        if (typeof index !== 'number') {
-            index = sectionIds
-                .map(sectionId => document.getElementById(sectionId))
-                .findIndex(element => Math.floor(element.getBoundingClientRect().y) <= 0);
+	/**
+	 * @param index (number) is optional. Used to explicitly set which dot to be active.
+	 */
+	function updatePageReferences(index) {
+		if (typeof index !== 'number') {
+			index = sectionIds
+				.map((sectionId) => document.getElementById(sectionId))
+				.findIndex(
+					(element) => Math.floor(element.getBoundingClientRect().y) <= 0
+				);
 
-            if (index < 0) {
-                index = 0;
-            } else {
-                index = Math.abs(index - (sectionIds.length - 1));
-            }
-        }
+			if (index < 0) {
+				index = 0;
+			} else {
+				index = Math.abs(index - (sectionIds.length - 1));
+			}
+		}
 
-        const dots = document.querySelectorAll('.page-reference-anchor');
+		const dots = document.querySelectorAll('.page-reference-anchor');
 
-        [...dots].forEach((dot, i) => {
-            if (i === index) {
-                dot.style.backgroundColor = 'black';
-            } else {
-                dot.style.backgroundColor = 'white';
-            }
-        });
-    }
+		[...dots].forEach((dot, i) => {
+			if (i === index) {
+				dot.style.backgroundColor = 'black';
+			} else {
+				dot.style.backgroundColor = 'white';
+			}
+		});
+	}
 
-    // Create HTML.
+	// Create HTML.
 
-    const pageReference = document.createElement('div');
-    pageReference.classList.add('page-reference');
+	const pageReference = document.createElement('div');
+	pageReference.classList.add('page-reference');
 
-    ids.forEach((id, i) => {
-        const pageReferenceAnchor = document.createElement('div');
-        pageReferenceAnchor.classList.add('page-reference-anchor');
+	ids.forEach((id, i) => {
+		const pageReferenceAnchor = document.createElement('div');
+		pageReferenceAnchor.classList.add('page-reference-anchor');
 
-        pageReferenceAnchor.addEventListener('click', () => {
-            smoothAnchorScroll(id).then(() => updatePageReferences(i));
-        });
+		pageReferenceAnchor.addEventListener('click', () => {
+			smoothAnchorScroll(id).then(() => updatePageReferences(i));
+		});
 
-        pageReference.appendChild(pageReferenceAnchor);
-    });
+		pageReference.appendChild(pageReferenceAnchor);
+	});
 
-    // Create scrolling listener.
+	// Create scrolling listener.
 
-    const sectionIds = ids.reverse();
+	const sectionIds = ids.reverse();
 
-    [document.body, document.documentElement, window].forEach(rootElement => {
-        rootElement.addEventListener('scroll', updatePageReferences, { passive: true });
-    });
+	[document.body, document.documentElement, window].forEach((rootElement) => {
+		rootElement.addEventListener('scroll', updatePageReferences, {
+			passive: true,
+		});
+	});
 
-    document.body.appendChild(pageReference);
+	document.body.appendChild(pageReference);
 
-    updatePageReferences();
+	updatePageReferences();
 }

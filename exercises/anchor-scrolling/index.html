@@ -1,35 +1,38 @@
 <script type="module">
-    import { smoothAnchorScroll } from '../../utils/smooth-anchor-scroll.function.js';
-    import { createPageReference } from '../../components/page-reference/create-page-reference.function.js';
+	import { smoothAnchorScroll } from '../../utils/smooth-anchor-scroll.function.js';
+	import { createPageReference } from '../../components/page-reference/create-page-reference.function.js';
 
-    window.smoothAnchorScroll = smoothAnchorScroll;
+	window.smoothAnchorScroll = smoothAnchorScroll;
 
-    window.addEventListener('load', () => {
-        createPageReference(['section-1', 'section-2', 'section-3']);
-    });
+	window.addEventListener('load', () => {
+		createPageReference(['section-1', 'section-2', 'section-3']);
+	});
 </script>
 
 <style>
-    body {
-        position: relative;
-    }
+	body {
+		position: relative;
+	}
 
-    .section-content {
-        height: 500px;
-    }
+	.section-content {
+		height: 500px;
+	}
 
-    .navigation-bar {
-        display: flex;
-    }
+	.navigation-bar {
+		display: flex;
+	}
 </style>
-<link rel="stylesheet" href="../../components/page-reference/page-reference.css">
+<link
+	rel="stylesheet"
+	href="../../components/page-reference/page-reference.css"
+/>
 
 <h1>Anchor Smooth Scrolling exercise</h1>
 
 <div class="navigation-bar">
-    <button onclick="smoothAnchorScroll('section-1')">Section 1</button>
-    <button onclick="smoothAnchorScroll('section-2')">Section 2</button>
-    <button onclick="smoothAnchorScroll('section-3')">Section 3</button>
+	<button onclick="smoothAnchorScroll('section-1')">Section 1</button>
+	<button onclick="smoothAnchorScroll('section-2')">Section 2</button>
+	<button onclick="smoothAnchorScroll('section-3')">Section 3</button>
 </div>
 
 <h2 id="section-1">Section 1</h2>
