@@ -1,0 +1,31 @@
+.content {
+	color: rgb(190, 109, 84);
+	column-gap: 48px;
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, auto);
+	margin-left: 15%;
+	padding-top: 32px;
+}
+
+.home-link {
+	margin-right: auto;
+}
+
+header {
+	background: salmon;
+	display: flex;
+	height: 250px;
+	justify-content: space-evenly;
+}
+
+h1 {
+	flex: 2;
+	font-size: 58px;
+	margin: auto auto auto 15%;
+}
+
+img {
+	grid-row: 1 / 4;
+}
